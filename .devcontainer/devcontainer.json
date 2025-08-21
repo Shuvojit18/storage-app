@@ -1,0 +1,9 @@
+{
+  "name": "Media Timeline",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {},
+  "postCreateCommand": "npm i",
+  "customizations": {
+    "codespaces": { "openFiles": ["README.md", "src/server.js"] }
+  }
+}

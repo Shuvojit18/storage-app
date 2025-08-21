@@ -1,21 +1,20 @@
-# storage-app
+# Media Timeline
 
-Simple Express app configured for Heroku deployment.
+Node + Express media timeline (images/videos) with JWT cookies and modern UI. Heroku-ready. SoC structured.
 
-## Development
-
-Install dependencies:
-
-```
-npm install
-```
-
-Start the server:
-
-```
-npm start
+## Local
+```bash
+npm i
+cp .env.example .env  # set JWT_SECRET
+npm run dev           # http://localhost:3000
 ```
 
-## Deployment
+## Deploy to Heroku
+```bash
+heroku create media-timeline
+heroku config:set JWT_SECRET=$(openssl rand -hex 32) COOKIE_SECURE=true FORCE_HTTPS=true
+# optional persistent uploads
+# heroku config:set CLOUDINARY_URL="cloudinary://<api_key>:<api_secret>@<cloud_name>"
 
-Heroku uses the `Procfile` to start the web process via `npm start`.
+git push heroku main
+```

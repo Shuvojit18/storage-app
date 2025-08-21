@@ -1,3 +1,16 @@
-node_modules
+# Node
+node_modules/
+npm-debug.log*
+.DS_Store
 .env
 
+# Build caches
+.cache/
+
+# Runtime data (generated)
+data/
+uploads/
+
+# Keep empty dirs in Git
+!data/.gitkeep
+!uploads/.gitkeep
