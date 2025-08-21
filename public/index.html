@@ -1,0 +1,14 @@
+<!doctype html><html lang="en" data-theme="auto"><head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Media Timeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/theme.css">
+</head><body>
+  <aside id="drawer" class="drawer" aria-hidden="true"><div class="inner"><div class="top"><span class="logo"></span><strong>Menu</strong><span style="flex:1"></span><button id="drawerClose" class="btn btn-outline">Close</button></div><nav><a href="/index.html">🏠 Home</a><a href="/profile.html">👤 Profile</a><a href="/settings.html">⚙️ Settings</a><a id="logoutLink" href="#">↪ Logout</a></nav></div></aside>
+  <div id="overlay" class="overlay"></div>
+  <header><div class="wrap bar"><button id="burger" class="burger">☰</button><div class="brand"><span class="logo"></span><span>Media Timeline</span></div><label class="pill">🔎 <input id="q" class="input" placeholder="Search…"></label><label class="pill">Type <select id="type" class="select"><option value="all">All</option><option value="image">Images</option><option value="video">Videos</option></select></label><button id="sort" class="btn btn-outline">Newest</button><span style="flex:1"></span><a id="loginLink" class="btn btn-primary" href="/auth-login.html">Login</a><a id="profileLink" class="btn btn-outline" href="/profile.html" style="display:none">Profile</a><button id="themeBtn" class="btn btn-outline">🌓</button><div class="pill"><input id="picker" type="file" multiple accept="image/*,video/*" style="display:none" /><button id="upload" class="btn btn-primary">＋ Upload</button><span id="status" style="opacity:.8"></span></div></div></header>
+  <main><section class="timeline" id="timeline"></section><div class="wrap" style="display:flex;gap:12px;justify-content:center;align-items:center;margin:24px 0"><button id="loadMore" class="btn btn-outline">Load more</button><span id="pageInfo" style="opacity:.8"></span></div></main>
+  <footer><div class="wrap" style="display:flex;justify-content:space-between;align-items:center"><span>© <span id="year"></span></span><a href="/settings.html">Settings</a></div></footer>
+  <script type="module" src="/js/timeline.js"></script>
+</body></html>
